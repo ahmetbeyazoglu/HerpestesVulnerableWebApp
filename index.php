@@ -69,7 +69,6 @@
     <p>This is my graduation project. I am a student of computer technology and information system at Mersin University.</p>
     <p>Vulnerable web application developed with PHP and MYSQL. You can improving yourself web security or you can use this lab for the education.</p>
     <p>A lot of web vulnerability in one lab you can improve your self in this lab</p>
-    <img src="xss/img/Antman.jpeg" width="250" height="275">
   </div>
 
   <div class="right">
