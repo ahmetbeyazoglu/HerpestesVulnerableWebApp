@@ -57,8 +57,8 @@
     <a href="/website/sqlinjection/sql1.php">Sql Injection</a>
     <a href="/website/codeexec/codeexec.php">Code Execution</a>
     <a href="/website/idor/index.php">Idor</a>
-    <a href="#">---</a>
-    <a href="#">---</a>
+    <a href="/website/ssrf/index.php">SSRF</a>
+    <a href="/website/csrf/index.php">---</a>
     <a href="#">---</a>
     <a href="#">---</a>
 
@@ -69,6 +69,7 @@
     <p>This is my graduation project. I am a student of computer technology and information system at Mersin University.</p>
     <p>Vulnerable web application developed with PHP and MYSQL. You can improving yourself web security or you can use this lab for the education.</p>
     <p>A lot of web vulnerability in one lab you can improve your self in this lab</p>
+    <img src="xss/img/Antman.jpeg" width="250" height="275">
   </div>
 
   <div class="right">
