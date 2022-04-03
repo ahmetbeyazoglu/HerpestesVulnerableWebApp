@@ -1,3 +1,14 @@
+
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,6 +60,7 @@
 
 <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
   <h1>Herpestes Web Security Vulnerable Lab</h1>
+  <button><a href="/website/logout.php">Logout</a></button>
 </div>
 
 <div style="overflow:auto">
@@ -58,8 +70,8 @@
     <a href="/website/codeexec/codeexec.php">Code Execution</a>
     <a href="/website/idor/index.php">Idor</a>
     <a href="/website/ssrf/index.php">SSRF</a>
-    <a href="/website/csrf/index.php">---</a>
-    <a href="#">---</a>
+    <a href="/website/csrf/index.php">CSRF</a>
+    <a href="/website/fileinclusion/index.php">Local File Inclusion</a>
     <a href="#">---</a>
 
   </div>
@@ -68,9 +80,7 @@
     <h2>Web Application Security</h2>
     <p>This is my graduation project. I am a student of computer technology and information system at Mersin University.</p>
     <p>Vulnerable web application developed with PHP and MYSQL. You can improving yourself web security or you can use this lab for the education.</p>
-    <p>A lot of web vulnerability in one lab you can improve your self in this lab</p>
-    <img src="xss/img/Antman.jpeg" width="250" height="275">
-  </div>
+    <p>A lot of web vulnerability in one lab you can improve your self in this lab</p> </div>
 
   <div class="right">
     <h2>About</h2>
