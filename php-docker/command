@@ -1,0 +1,9 @@
+sudo docker-compose up --build
+
+server
+'''
+
+dosya yollarını düzenle
+header alanlarını düzenle
+container oluştur
+'''

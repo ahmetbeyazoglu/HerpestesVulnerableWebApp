@@ -1,0 +1,26 @@
+# Use root/example as user/password credentials
+version: '3.9'
+
+services:
+    php-env:
+      build: .
+      volumes:
+        - ./src:/var/www/html
+      ports:
+        - 9000:80
+
+
+    mysql_db:
+      image: mysql:latest
+      command: --default-authentication-plugin=mysql_native_password
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: 112263ABC
+
+    phpmyadmin:
+      image: phpmyadmin:latest
+      restart: always
+      ports:
+        - 9001:80
+      environment:
+        - PMA_ARBITRARY=1
