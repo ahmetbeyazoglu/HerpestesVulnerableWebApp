@@ -1,5 +1,5 @@
 # HerpestesVulnerableWebApp
-**Still under development. When it's finished I will update it here.**<br><hr>
+
 Herpestes Vulnerable Web Application is a graduation project. You can use this project to improve your web vulnerable skills. While improving this lab I used PHP, docker, and MySQL. Very easy to use with docker-compose. In the down, I will tell you how can you install and use it.<br><hr>
 First of all, you have to install docker and docker-compose I won't tell you how to do this it's not the subject.
 <pre>
@@ -21,4 +21,4 @@ Fill like this. Password: 112263ABC. After the login, we look in the Project fil
 2-	As we can see create a new database and name is herpestes. Second pharase is we are importing in project file.<br>
 And its database is done.<br>
 Completed the lab setup if we connected the 127.0.0.1:9000 we should see login page.<br><hr>
-<a href="">Labs writeup is here.</a>
+<a href="https://github.com/herpestes0/herpestes0.github.io/tree/main/writeup">Labs writeup is here.</a>
