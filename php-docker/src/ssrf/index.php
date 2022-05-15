@@ -8,6 +8,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 ?>
+  <?php include '../header.php'; ?>
 <?php
 
 if(isset($_GET ['url'])){
@@ -29,4 +30,7 @@ if(isset($_GET ['url'])){
           </center>
         </form>
   </body>
+     <div style="margin-top:10%;">
+   <?php include '../footer.php'; ?>
+</div>
 </html>
