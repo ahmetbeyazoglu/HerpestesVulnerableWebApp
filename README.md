@@ -9,4 +9,16 @@ sudo docker-compose up –build
 </pre>
 <br>
 After installation we should configure our projet database. İf we build Project we can connect 127.0.0.1:9001 and we will see phpmyadmin login page.	<br>
+
 ![image](https://github.com/herpestes0/HerpestesVulnerableWebApp/blob/main/img/db_login.png?raw=true)
+<br>
+
+Fill like this. Password: 112263ABC. After the login, we look in the Project file and the herpestes.sql file is here. We need two steps:<br>
+1-	We create a empty database and name ‘herpestes’
+<br>
+![image](https://github.com/herpestes0/HerpestesVulnerableWebApp/blob/main/img/db_import.png?raw=true)
+<br>
+2-	As we can see create a new database and name is herpestes. Second pharase is we are importing in project file.<br>
+And its database is done.<br>
+Completed the lab setup if we connected the 127.0.0.1:9000 we should see login page.<br><hr>
+<a href="">Labs writeup is here.</a>
