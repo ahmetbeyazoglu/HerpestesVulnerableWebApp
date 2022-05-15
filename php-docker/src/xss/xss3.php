@@ -35,8 +35,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           <label for="emailAddress">Email Address:</label>
           <input type="text" name="email" id="emailAddress">
       </p>
-      <input type="submit" value="Save Data!"><br />
-      <input type="submit" name="deleteItem" value="Clear All Data!!" />
+      <input type="submit" value="Save Data!"name="savedata"><br />
+      <input type="reset" value="reset">
+
   </form>
 
   <div style="border: 5px solid red; margin-left:300px; margin-right:300px; margin-top:50px;">
@@ -56,7 +57,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   $email = mysqli_real_escape_string($link, $_REQUEST['email']);
 
   // Attempt insert query execution
-  $sql = "INSERT INTO xss (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
+  if(isset($_POST['savedata'])){
+	  $sql = "INSERT INTO xss (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
+	}	  
   if(mysqli_query($link, $sql)){
   } else{
       echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
@@ -75,10 +78,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     }
 }
-    if(isset($_POST['deleteItem'])){
-      $delete = $_POST['deleteItem'];
-      $sql = "DELETE from 'xss'";
-    }
+
 
   // Close connection
   mysqli_close($link);
