@@ -69,7 +69,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <a href="/ssrf/index.php">SSRF</a>
     <a href="/csrf/index.php">CSRF</a>
     <a href="/fileinclusion/index.php">File Inclusion</a>
-
+    <a href="/fileupload/index.php">File Upload</a>
   </div>
 
   <div class="main">
