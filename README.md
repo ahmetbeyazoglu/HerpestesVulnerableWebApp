@@ -8,5 +8,5 @@ cd HerpestesVulnerableWebApp/php-docker
 sudo docker-compose up –build
 </pre>
 <br>
-After installation we should configure our projet database. İf we build Project we can connect 127.0.0.1:9001 and we will see phpmyadmin login page.<br>
-![resim](https://user-images.githubusercontent.com/46286059/168492506-b13969e0-5349-400c-bdf3-d31bf27533c3.png)
+After installation we should configure our projet database. İf we build Project we can connect 127.0.0.1:9001 and we will see phpmyadmin login page.	<br>
+![image](https://github.com/herpestes0/HerpestesVulnerableWebApp/blob/main/img/db_login.png?raw=true)
