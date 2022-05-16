@@ -18,7 +18,7 @@ Fill like this. Password: 112263ABC. After the login, we look in the Project fil
 <br>
 ![image](https://github.com/herpestes0/HerpestesVulnerableWebApp/blob/main/img/db_import.png?raw=true)
 <br>
-2-	As we can see create a new database and name is herpestes. Second pharase is we are importing in project file.<br>
+2-	As we can see create a new database and name is herpestes. Second part is we are importing in project file.<br>
 And its database is done.<br>
 Completed the lab setup if we connected the 127.0.0.1:9000 we should see login page.<br><hr>
 <a href="https://github.com/herpestes0/herpestes0.github.io/tree/main/writeup">Labs writeup is here.</a>
